@@ -1,0 +1,81 @@
+---
+// Cuma Hayatı - Ana Sayfa
+---
+
+<html lang="tr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Cuma Hayatı | İçerik Dünyası</title>
+		<style>
+			body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
+			header { background-color: #000; color: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+			header h1 { margin: 0; font-size: 1.5rem; color: #ff0000; }
+			nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+			nav a:hover { color: #ff0000; }
+			
+			/* Ana Gövde Alanı */
+			main { max-width: 1200px; margin: 0 auto; padding: 2rem 5%; }
+			.hero { text-align: center; padding: 3rem 0; }
+			
+			.video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+			.video-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: transform 0.3s; }
+			.video-card:hover { transform: translateY(-5px); }
+			.video-info { padding: 20px; }
+			.video-info h3 { margin: 0 0 10px 0; font-size: 1.2rem; }
+			.video-info p { color: #666; font-size: 0.9rem; line-height: 1.5; }
+			
+			footer { background: #111; color: #888; text-align: center; padding: 3rem; margin-top: 4rem; }
+			.social-links a { color: #fff; margin: 0 15px; text-decoration: none; font-size: 0.9rem; }
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>CUMA HAYATI</h1>
+			<nav>
+				<a href="/">Ana Sayfa</a>
+				<a href="/videolar">Videolar</a>
+				<a href="/iletisim">İletişim</a>
+			</nav>
+		</header>
+		
+		<main>
+			<section class="hero">
+				<h2>Lezzet ve Bilgi Dolu Dünyamıza Hoş Geldiniz</h2>
+				<p>YouTube ve Sosyal Medya içeriklerimizin merkezi.</p>
+			</section>
+
+			<section class="video-grid">
+				<div class="video-card">
+					<div style="position: relative; padding-bottom: 56.25%; height: 0; background: #000;">
+						<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/Sc63G0iSjDk" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="video-info">
+						<h3>Kestane Kebap Sırları</h3>
+						<p>Evde sokak lezzetini yakalamanın en kolay yolu. Püf noktalarıyla kestane pişirme.</p>
+					</div>
+				</div>
+
+				<div class="video-card">
+					<div style="position: relative; padding-bottom: 56.25%; height: 0; background: #000;">
+						<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/V6iF0HInBfQ" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="video-info">
+						<h3>Arpa Şehriye Pilavı</h3>
+						<p>Tane tane dökülen, tam kıvamında Arpa Şehriye pilavı tarifimiz yayında!</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="social-links">
+				<a href="#">YouTube</a>
+				<a href="#">TikTok</a>
+				<a href="#">Instagram</a>
+			</div>
+			<p style="margin-top: 20px;">&copy; 2026 Cuma Hayatı | iyibilgilernet</p>
+		</footer>
+	</body>
+</html>
